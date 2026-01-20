@@ -653,3 +653,64 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+
+/* 毛玻璃卡片樣式 */
+.glass-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    /* 極淡的白色背景 */
+    backdrop-filter: blur(10px);
+    /* 模糊背景照片 */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* 半透明邊框 */
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 260px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.glass-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.glass-card .algo-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* 箭頭樣式 */
+.glass-mode .algo-arrow {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2rem;
+}
+
+/* 第四步的重點強調 */
+.glass-card.highlight-step {
+    background: rgba(81, 207, 102, 0.15);
+    /* 微微的綠色 */
+    border-color: var(--success-color);
+    box-shadow: 0 0 20px rgba(81, 207, 102, 0.4);
+    /* 發光效果 */
+}
+
+.glowing-text {
+    color: #69db7c !important;
+    text-shadow: 0 0 10px rgba(105, 219, 124, 0.5);
+}
